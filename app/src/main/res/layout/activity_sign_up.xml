@@ -8,6 +8,7 @@
     android:background="@drawable/background">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_marginStart="35dp"
@@ -16,115 +17,120 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="295dp"
-        android:layout_height="18dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="279dp"
-        android:text="Name"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="205dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#1565C0"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-    <EditText
-        android:layout_width="270dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="299dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/email_pass_rectangle"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            android:text="Name"
+            android:textColor="#1565C0" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="295dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="349dp"
-        android:text="Email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#1565C0"/>
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:background="@drawable/email_pass_rectangle" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress1"
-        android:layout_width="270dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="369dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/email_pass_rectangle"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="295dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="423dp"
-        android:text="Password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#1565C0"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            android:text="Email"
+            android:textColor="#1565C0" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword1"
-        android:layout_width="270dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="443dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/email_pass_rectangle"/>
+        <EditText
+            android:id="@+id/editTextTextEmailAddress1"
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:background="@drawable/email_pass_rectangle"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="295dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="493dp"
-        android:text="Confirm Password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#1565C0"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="270dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="513dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/email_pass_rectangle"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            android:text="Password"
+            android:textColor="#1565C0" />
 
-    <Button
-        android:layout_width="126dp"
-        android:layout_height="55dp"
-        android:text="Sign Up"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="624dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/sign_in_up"/>
+        <EditText
+            android:id="@+id/editTextTextPassword1"
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:background="@drawable/email_pass_rectangle"
+            android:ems="10"
+            android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="126dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="687dp"
-        android:text="Cancel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/sign_in_up"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            android:text="Confirm Password"
+            android:textColor="#1565C0" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="270dp"
+            android:layout_height="37dp"
+            android:background="@drawable/email_pass_rectangle"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="13dp"
+
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:background="@drawable/sign_in_up"
+            android:text="Sign Up" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:background="@drawable/sign_in_up"
+            android:onClick="back"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

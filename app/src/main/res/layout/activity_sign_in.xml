@@ -80,7 +80,7 @@
         android:layout_marginTop="614dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/sign_in_up"/>
+        android:background="@drawable/sign_in_up" />
 
     <Button
         android:id="@+id/button"
@@ -91,7 +91,8 @@
         android:text="Sign Up"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/sign_in_up"/>
+        android:background="@drawable/sign_in_up"
+        android:onClick="moveOn2"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

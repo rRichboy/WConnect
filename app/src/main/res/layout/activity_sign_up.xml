@@ -38,6 +38,7 @@
             android:textColor="#1565C0" />
 
         <EditText
+
             android:layout_width="270dp"
             android:layout_height="37dp"
             android:background="@drawable/email_pass_rectangle" />
@@ -112,10 +113,12 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <Button
+            android:id="@+id/buttonSignUp"
             android:layout_width="126dp"
             android:layout_height="55dp"
             android:background="@drawable/sign_in_up"
-            android:text="Sign Up" />
+            android:text="Sign Up"
+            android:onClick="sign_up"/>
 
         <Space
             android:layout_width="wrap_content"

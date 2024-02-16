@@ -33,6 +33,4 @@ public class SignUp extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-
 }

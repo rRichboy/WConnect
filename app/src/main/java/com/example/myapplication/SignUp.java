@@ -27,9 +27,9 @@ public class SignUp extends AppCompatActivity {
         String emailStr = email.getText().toString();
         String passwordStr = password.getText().toString();
 
+        User user = new User(emailStr, passwordStr);
         Intent intent = new Intent(this, SignIn.class);
-        intent.putExtra("email", emailStr);
-        intent.putExtra("password", passwordStr);
+        intent.putExtra(User.class.getName(), user);
         startActivity(intent);
 
     }

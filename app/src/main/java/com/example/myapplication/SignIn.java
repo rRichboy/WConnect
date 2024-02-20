@@ -17,15 +17,13 @@ public class SignIn extends AppCompatActivity {
         EditText email = findViewById(R.id.editTextTextEmailAddress1);
         EditText password = findViewById(R.id.editTextTextPassword1);
 
-        Bundle args = getIntent().getExtras();
+        User args = (User) getIntent().getSerializableExtra(User.class.getName());
 
         if (args != null) {
-
-            String emailArg = args.getString("email");
-            String passwordArg = args.getString("password");
-
+            String emailArg = args.email;
+            String pwdArg = args.password;
             email.setText(emailArg);
-            password.setText(passwordArg);
+            password.setText(pwdArg);
         }
     }
 
